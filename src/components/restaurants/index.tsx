@@ -12,9 +12,7 @@ export interface RestaurantsProps {
 
 export function Restaurants() {
     const [restaurants, setRestaurants] = useState ([]) 
-
-
-    useEffect(() => {
+     useEffect(() => {
         async function getFoods() {
             const response = await fetch("http://192.168.3.143:3000/restaurants")
             const data = await response.json()
