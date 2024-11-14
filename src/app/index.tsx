@@ -5,6 +5,7 @@ import { Banner } from "../components/banner";
 import Search from "../components/search";
 import Section from "../components/section";
 import { TrendingFoods } from "../components/trending";
+import { Restaurants } from "../components/restaurants";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -30,7 +31,7 @@ export default function Index() {
       name="Comidas em alta" 
       label="Veja mais" 
       action={ () => console.log("CLICOU NO VEJA MAIS")}
-      size="text-lg"
+      size="text-2xl"
       />
 
 
@@ -38,15 +39,13 @@ export default function Index() {
       
       <Section 
       name="Famosos no DevFood"
-      label="Veja mais"
-      action={ () => console.log("CLICOU NO VEJA MAIS")} 
-      size="text-lg" 
-      
-      
+      label="Veja todos"
+      action={ () => console.log("CLICOU NO FAMOSOS")} 
+      size="text-xl"
       />
 
+      <Restaurants/>
       
-  
     </ScrollView>
   );
 }
